@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="WalmartProject">
+ 	
+
+
+ <test name="Testcases">
+  
+    <classes>
+     <class name="com.walmart.testcases.SearchTest"/>
+     <class name="com.walmart.testcases.Loginpagetest"/>
+ 	 <class name="com.walmart.testcases.MyAccountTest"/>
+     <class name="com.walmart.testcases.AddressTest"/>
+     <class name="com.walmart.testcases.MylistTest"/>
+     <class name="com.walmart.testcases.MyrecommendationpageTest"/>
+     <class name="com.walmart.testcases.PersonalsettingTest"/>
+    
+     
+     </classes>
+  </test> 
+</suite> 
