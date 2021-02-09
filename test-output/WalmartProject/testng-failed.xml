@@ -1,57 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [WalmartProject]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.walmart.extentreport.ExtentReporter"/>
+  </listeners>
   <test thread-count="5" name="Testcases(failed)">
     <classes>
-      <class name="com.walmart.testcases.MyAccountTest">
-        <methods>
-          <include name="myaccountpageTitleTest"/>
-          <include name="teardown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.walmart.testcases.MyAccountTest -->
       <class name="com.walmart.testcases.SearchTest">
         <methods>
           <include name="teardown"/>
+          <include name="checkoutpageTest"/>
           <include name="SearchpageTitleTest"/>
           <include name="setup"/>
+          <include name="SearchpageTest"/>
         </methods>
       </class> <!-- com.walmart.testcases.SearchTest -->
-      <class name="com.walmart.testcases.AddressTest">
-        <methods>
-          <include name="AddressTitleTest"/>
-          <include name="setup"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.walmart.testcases.AddressTest -->
       <class name="com.walmart.testcases.PersonalsettingTest">
         <methods>
           <include name="PersonalsettingpageTitleTest"/>
+          <include name="languageTest"/>
+          <include name="PersonalinfoTest"/>
+          <include name="passwordTest"/>
           <include name="teardown"/>
+          <include name="emailTest"/>
           <include name="setup"/>
+          <include name="wincardTest"/>
+          <include name="PersonalsettingpageLogoTest"/>
         </methods>
       </class> <!-- com.walmart.testcases.PersonalsettingTest -->
-      <class name="com.walmart.testcases.MyrecommendationpageTest">
-        <methods>
-          <include name="setup"/>
-          <include name="myrecommendationpageTitleTest"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.walmart.testcases.MyrecommendationpageTest -->
-      <class name="com.walmart.testcases.MylistTest">
-        <methods>
-          <include name="teardown"/>
-          <include name="setup"/>
-          <include name="MylistpageTitleTest"/>
-        </methods>
-      </class> <!-- com.walmart.testcases.MylistTest -->
-      <class name="com.walmart.testcases.Loginpagetest">
-        <methods>
-          <include name="teardown"/>
-          <include name="setup"/>
-          <include name="loginpageTitleTest"/>
-        </methods>
-      </class> <!-- com.walmart.testcases.Loginpagetest -->
     </classes>
   </test> <!-- Testcases(failed) -->
 </suite> <!-- Failed suite [WalmartProject] -->

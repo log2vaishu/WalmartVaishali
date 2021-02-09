@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [WalmartProject]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.walmart.extentreport.ExtentReporter"/>
+  </listeners>
+  <test thread-count="5" name="Testcases(failed)">
     <classes>
       <class name="com.walmart.testcases.SearchTest">
         <methods>
@@ -12,6 +15,19 @@
           <include name="SearchpageTest"/>
         </methods>
       </class> <!-- com.walmart.testcases.SearchTest -->
+      <class name="com.walmart.testcases.PersonalsettingTest">
+        <methods>
+          <include name="PersonalsettingpageTitleTest"/>
+          <include name="languageTest"/>
+          <include name="PersonalinfoTest"/>
+          <include name="passwordTest"/>
+          <include name="teardown"/>
+          <include name="emailTest"/>
+          <include name="setup"/>
+          <include name="wincardTest"/>
+          <include name="PersonalsettingpageLogoTest"/>
+        </methods>
+      </class> <!-- com.walmart.testcases.PersonalsettingTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Testcases(failed) -->
+</suite> <!-- Failed suite [WalmartProject] -->

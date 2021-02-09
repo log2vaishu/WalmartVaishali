@@ -4,7 +4,6 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
-
 import org.testng.IReporter;
 import org.testng.IResultMap;
 import org.testng.ISuite;
@@ -13,18 +12,18 @@ import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.xml.XmlSuite;
 
-import com.aventstack.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+import com.relevantcodes.extentreports.model.Test;
 
-//import com.relevantcodes.extentreports.ExtentReports;
-//import com.relevantcodes.extentreports.ExtentTest;
-//import com.relevantcodes.extentreports.LogStatus;
-
-public class ExtentReporterNG implements IReporter {
+public  class ExtentReporter implements IReporter {
 	private ExtentReports extent;
 
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites,
 			String outputDirectory) {
-		extent = new ExtentReports(outputDirectory + File.separator+ "WalmartExtent.html", true);
+		extent = new ExtentReports(outputDirectory + File.separator
+				+ "Walmart.html", true);
 
 		for (ISuite suite : suites) {
 			Map<String, ISuiteResult> result = suite.getResults();
@@ -72,4 +71,26 @@ public class ExtentReporterNG implements IReporter {
 		calendar.setTimeInMillis(millis);
 		return calendar.getTime();
 	}
+
+
+	public void stop() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void flush() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void addTest(Test test) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setTestRunnerLogs() {
+		// TODO Auto-generated method stub
+		
+	}
 }
+
